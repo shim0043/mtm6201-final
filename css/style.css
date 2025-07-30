@@ -1,0 +1,49 @@
+/* mobile media query */
+header{
+    height: 72vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+:root{
+    --primary: #304F22;
+    --secondary: #C9C250;
+    --emphasis: #FFBE4D;
+}
+
+.skip-link{
+    position: fixed;
+    z-index: -1;
+    color: white;
+}
+
+.fa-leaf{
+    font-size: 5rem;
+}
+
+.fa-user{
+    font-size: 1.5rem;
+}
+
+header .fa-solid{
+    color: white;
+}
+
+footer .fa-leaf{
+    color: var(--secondary);
+}
+
+footer{
+    background-color: var(--primary);
+}
+
+footer p{
+    color: var(--secondary);
+}
+
+
+/* tablet media query */
+@media screen and (min-width: 768px){
+
+}
