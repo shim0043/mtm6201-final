@@ -16,8 +16,10 @@
         <nav>
             <div class="d-flex justify-content-between pt-2">
                 <div class="p-4 pt-5" id="navbarTogglerDemo01">
-                    <a class="navbar-toggler text-white" type="button" id="navbarTogglerDemo01" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="text-white"><i class="fa-solid fa-bars"></i></span></i>
+                    <a class="navbar-toggler text-white" href="" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation" role="button">
+                        <span class="text-white">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
                     </a>
                     <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
                         <li>
@@ -27,10 +29,10 @@
                             <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" aria-disabled="true">► Menu</a>
+                            <a class="nav-link disabled text-black" href="">► Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled text-black" aria-disabled="true"> ► Events</a>
+                            <a class="nav-link disabled text-black" href=""> ► Events</a>
                         </li>
                         <li>
                             <a class="nav-link text-black" aria-current="page" href="about.html">► About Us</a>
@@ -39,20 +41,22 @@
                             <a class="nav-link text-black" aria-current="page" href="reservation.html">► Reservation</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" aria-disabled="true">► Contact</a>
+                            <a class="nav-link disabled text-black" href="">► Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="p-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
                 </div>
                 
                 <div class="p-4 pt-5">
-                    <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
+                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,78 +65,98 @@
         <div class="wrapper full-nav">
             <ul class="nav nav-fill py-2">
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Menu</a>
+                    <a class="nav-link disabled text-white" href="">Menu</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Events</a>
+                    <a class="nav-link disabled text-white" href="">Events</a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item py-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="reservation.html">Reservations</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Contacts</a>
+                    <a class="nav-link disabled text-white" href="">Contacts</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
+                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
 
-            <div class="header-text text-center">
-                <h1 class="display-1 text-light">Inspired By Nature's Finest Flavors</h1>
-                <a class="btn btn-lg bg-white" href="reservation.html" type="submit" role="button">Reserve Now</a>
-                <a class="btn btn-lg bg-white" href="#menu-items" type="submit" role="button">Order Now</a>
+            <div class="header-text text-center py-4 pb-5">
+                <h1 class="display-1 text-light mb-5">Inspired By Nature's Finest Flavors</h1>
+                <div class="pb-5"> 
+                    <a class="btn btn-lg bg-white" href="reservation.html" role="button">Reserve Now</a>
+                    <a class="btn btn-lg bg-white" href="#menu-items" role="button">Order Now</a>
+                </div>
             </div>
         </div>
     </header>
 
 
     <main class="text-center my-5">
-        <section id="menu-items">
-            <h2>Menu Items</h2>
+        <section id="menu-items" class="py-4">
             <div class="wrapper">
-                <div class="breakfast">
-                    <h3>Breakfast</h3>
-                    <button class="btn btn-lg" type="submit" role="button">Breakfast Menu</button>
-                </div>
-                <div class="lunch">
-                    <h3>Lunch</h3>
-                    <button class="btn btn-lg" type="submit" role="button">Lunch Menu</button>
-                </div>
-                <div class="dinner">
-                    <h3>Dinner</h3>
-                    <button class="btn btn-lg" type="submit" role="button">Dinner Menu</button>
+                <h2>Menu Items</h2>
+                <div class="row gy-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card breakfast">
+                            <div class="card-body">
+                                <h3>Breakfast</h3>
+                                <a class="btn btn-lg" href="" role="button">Breakfast Menu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card breakfast">
+                            <div class="card-body">
+                                <h3>Breakfast</h3>
+                                <a class="btn btn-lg" href="" role="button">Lunch Menu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card dinner">
+                            <div class="card-body">
+                                <h3>Dinner</h3>
+                                <a class="btn btn-lg" href="" role="button">Dinner Menu</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="new-dishes">
-            <h2>New Items</h2>
+        <section id="new-dishes" class="py-4">
             <div class="wrapper">
-                <div class="bg-white">
+                <h2>New Items</h2>
+                <div class="pt-5">
                     <div class="bg-green">
                         <h3>New drinks</h3>
                         <p>Check out our new drink items!</p>
                         <h3>Read more</h3>
-                        <button class="btn btn-lg" type="submit" role="button">Order Now</button>
+                        <a class="btn btn-lg" href="" role="button">Order Now</a>
                     </div>
                 </div>
 
-                <div class="bg-white">
+                <div class="pt-5">
                     <div class="bg-green">
                         <h3>New items</h3>
                         <p>Check out our new seasonal dishes!</p>
                         <h3>Ream more</h3>
-                        <button class="btn btn-lg" type="submit" role="button">Order Now</button>
+                        <a class="btn btn-lg" href="" role="button">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -147,11 +171,13 @@
 
 
     <footer class="text-center">
-        <a href="index.html"><i class="fa-solid fa-leaf mt-4" alt="website logo"></i></a>
+        <a href="index.html">
+            <i class="fa-solid fa-leaf mt-4"></i>
+        </a>
         <p class="m-5">Seasonal | Vegetarian | Locally Sourced<br>123 Green St., ON, Canada<br>000-000-000<br>greenstreet@gmail.com</p>
         <div class="">
-            <a class="btn btn-lg bg-white" href="reservation.html" type="submit" role="button">Reserve Now</a>
-            <a class="btn btn-lg bg-white" href="#menu-items" type="submit" role="button">Order Now</a>
+            <a class="btn btn-lg bg-white" href="reservation.html" role="button">Reserve Now</a>
+            <a class="btn btn-lg bg-white" href="#menu-items" role="button">Order Now</a>
         </div>
         <p class="mb-0 mt-5 pb-3">© Green Street 2025</p>
     </footer>

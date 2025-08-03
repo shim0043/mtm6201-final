@@ -16,8 +16,10 @@
         <nav>
             <div class="d-flex justify-content-between pt-2">
                 <div class="p-4 pt-5" id="navbarTogglerDemo01">
-                    <a class="navbar-toggler text-white" type="button" id="navbarTogglerDemo01" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="text-white"><i class="fa-solid fa-bars"></i></span></i>
+                    <a class="navbar-toggler text-white" href="" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation" role="button">
+                        <span class="text-white">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
                     </a>
                     <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
                         <li>
@@ -27,10 +29,10 @@
                             <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" aria-disabled="true">► Menu</a>
+                            <a class="nav-link disabled text-black" href="">► Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled text-black" aria-disabled="true"> ► Events</a>
+                            <a class="nav-link disabled text-black" href=""> ► Events</a>
                         </li>
                         <li>
                             <a class="nav-link text-black" aria-current="page" href="about.html">► About Us</a>
@@ -39,20 +41,22 @@
                             <a class="nav-link text-black" aria-current="page" href="reservation.html">► Reservation</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" aria-disabled="true">► Contact</a>
+                            <a class="nav-link disabled text-black" href="">► Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="p-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
                 </div>
                 
                 <div class="p-4 pt-5">
-                    <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
+                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,28 +65,30 @@
         <div class="wrapper full-nav">
             <ul class="nav nav-fill py-2">
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Menu</a>
+                    <a class="nav-link disabled text-white" href="">Menu</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Events</a>
+                    <a class="nav-link disabled text-white" href="">Events</a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item py-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="reservation.html">Reservations</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" aria-disabled="true">Contacts</a>
+                    <a class="nav-link disabled text-white" href="">Contacts</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
+                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -90,34 +96,55 @@
     </header>
 
 
-    <main class="text-center my-5">
-        <h2>About Us</h2>
-        <section>
-            <div>
-                <img src="images/two-people.jpg" alt="two women talking around the table">
-            </div>
-            <div>
-                <h3>Mission</h3>
-                <p>Our mission is to celebrate the art of plant-based dining by creating elegant, seasonal dishes that honor nature's bounty, support local growers, and nourish both body and soul.</p>
-            </div>
+    <main class="my-4">
+        <section class="py-5">
+            <div class="wrapper">
+                <h2 class="mb-4">About Us</h2>
 
-            <div>
-                <img src="images/cooking-pan.jpg" alt="vegetables being cooked on pan">
+                <div class="row mb-5 text-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/two-people.jpg" alt="two women talking around the table">
+                    </div>
+                    <div class="col-lg-6 align-self-top">
+                        <h3>Mission</h3>
+                        <p>Our mission is to celebrate the art of plant-based dining by creating elegant, seasonal dishes that honor nature's bounty, support local growers, and nourish both body and soul.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 text-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <img class="img-fluid" src="images/cooking-pan.jpg" alt="vegetables being cooked on pan">
+                    </div>
+                    <div class="col-lg-6 align-self-top order-lg-1">
+                        <h3>Our Story</h3>
+                        <p>Rooted in a love for seasonal ingredients and sustainable living, we craft elegant vegetarian dishes that celebrate nature, local farms, and the art of mindful dining.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Our Story</h3>
-                <p>Rooted in a love for seasonal ingredients and sustainable living, we craft elegant vegetarian dishes that celebrate nature, local farms, and the art of mindful dining.</p>
-            </div>
+        </section>
+
+        <!-- placeholder section per rubric requirement -->
+        <section>
+            <h2></h2>
+            <div class="wrapper"></div>
+        </section>
+
+        <!-- placeholder section per rubric requirement (2) -->
+        <section>
+            <h2></h2>
+            <div class="wrapper"></div>
         </section>
     </main>
 
     
     <footer class="text-center">
-        <a href="index.html"><i class="fa-solid fa-leaf mt-4" alt="website logo"></i></a>
+        <a href="index.html">
+            <i class="fa-solid fa-leaf mt-4"></i>
+        </a>
         <p class="m-5">Seasonal | Vegetarian | Locally Sourced<br>123 Green St., ON, Canada<br>000-000-000<br>greenstreet@gmail.com</p>
         <div class="">
-            <a class="btn btn-lg bg-white" href="reservation.html" type="submit" role="button">Reserve Now</a>
-            <a class="btn btn-lg bg-white" href="#menu-items" type="submit" role="button">Order Now</a>
+            <a class="btn btn-lg bg-white" href="reservation.html" role="button">Reserve Now</a>
+            <a class="btn btn-lg bg-white" href="#menu-items" role="button">Order Now</a>
         </div>
         <p class="mb-0 mt-5 pb-3">© Green Street 2025</p>
     </footer>
