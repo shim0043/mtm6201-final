@@ -1,6 +1,5 @@
 /* mobile media query */
 header{
-    height: 72vh;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -16,7 +15,7 @@ header{
     font-size: 5rem;
 }
 
-.fa-user{
+.fa-user, .fa-bars{
     font-size: 1.5rem;
 }
 
@@ -32,25 +31,29 @@ footer p{
     color: var(--secondary);
 }
 
-.nav-item{
+.full-nav .nav-item{
     display: none;
 }
 
 
 /* tablet media query */
 @media screen and (min-width: 768px){
+    .wrapper{
+        width: 720px;
+        margin: auto;
+    }
+
     nav{
         display: none;
     }
 
-    .nav-item{
+    .full-nav .nav-item{
         display: flex;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1440px){
     .wrapper{
         width: 1200px;
-        margin: auto;
     }
 }
