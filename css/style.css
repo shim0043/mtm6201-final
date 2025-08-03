@@ -12,22 +12,12 @@ header{
     --emphasis: #FFBE4D;
 }
 
-.skip-link{
-    position: fixed;
-    z-index: -1;
-    color: white;
-}
-
 .fa-leaf{
     font-size: 5rem;
 }
 
 .fa-user{
     font-size: 1.5rem;
-}
-
-header .fa-solid{
-    color: white;
 }
 
 footer .fa-leaf{
@@ -42,8 +32,25 @@ footer p{
     color: var(--secondary);
 }
 
+.nav-item{
+    display: none;
+}
+
 
 /* tablet media query */
 @media screen and (min-width: 768px){
+    nav{
+        display: none;
+    }
 
+    .nav-item{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .wrapper{
+        width: 1200px;
+        margin: auto;
+    }
 }
