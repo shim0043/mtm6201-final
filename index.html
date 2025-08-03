@@ -11,19 +11,22 @@
 </head>
 <body itemscope itemtype="https://schema.org/Restaurant">
     <a href="#main-content" class="skip-link position-fixed text-white z-n1">Skip to Main Content</a>
+
     <header>
         <nav>
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text-white"><i class="fa-solid fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse bg-white px-5 py-3" id="navbarTogglerDemo01">
-                    <h3 class="me-auto mb-2 mb-lg-0">Main Menu</h3>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+            <div class="d-flex justify-content-between pt-2">
+                <div class="p-4 pt-5" id="navbarTogglerDemo01">
+                    <a class="navbar-toggler text-white" type="button" id="navbarTogglerDemo01" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white"><i class="fa-solid fa-bars"></i></span></i>
+                    </a>
+                    <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
+                        <li>
+                            <h3 class="me-auto mb-2 mb-lg-0">Main Menu</h3>
+                        </li>
+                        <li>
                             <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li>
                             <a class="nav-link disabled text-black" aria-disabled="true">► Menu</a>
                         </li>
                         <li class="nav-item">
@@ -40,35 +43,46 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="p-3">
+                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
+                </div>
+                
+                <div class="p-4 pt-5">
+                    <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <div class="wrapper full-nav">
-            <ul class="nav nav-fill pt-3 fixed-top">
-                <li class="nav-item mt-3">
+            <ul class="nav nav-fill py-2">
+                <li class="nav-item pt-5">
                     <a class="nav-link disabled text-white" aria-disabled="true">Menu</a>
                 </li>
-                <li class="nav-item mt-3">
+                <li class="nav-item pt-5">
                     <a class="nav-link disabled text-white" aria-disabled="true">Events</a>
                 </li>
-                <li class="nav-item mt-3">
+                <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item py-3">
                     <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" alt="website logo" itemprop="logo"></i></a>
                 </li>
-                <li class="nav-item mt-3">
+                <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="reservation.html">Reservations</a>
                 </li>
-                <li class="nav-item mt-3">
+                <li class="nav-item pt-5">
                     <a class="nav-link disabled text-white" aria-disabled="true">Contacts</a>
                 </li>
-                <li class="nav-item mt-4">
+                <li class="nav-item pt-5">
                     <a class="navbar-brand text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" alt="user icon"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Log In</a></li>
+                        <li><a class="dropdown-item disabled text-black" aria-disabled="true">► Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -130,6 +144,7 @@
             <div class="wrapper"></div>
         </section>
     </main>
+
 
     <footer class="text-center">
         <a href="index.html"><i class="fa-solid fa-leaf mt-4" alt="website logo"></i></a>
