@@ -1,4 +1,12 @@
 /* mobile media query */
+h1, h2, h3{
+    font-family: Alegreya, serif;
+}
+
+a, p{
+    font-family: Inter, sans-serif;
+}
+
 header{
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/hero.jpg);
     background-size: cover;
@@ -37,6 +45,10 @@ footer p{
 
 .bg-green{
     background-color: var(--secondary);
+}
+
+iframe{
+    height: 25rem;
 }
 
 
