@@ -1,10 +1,23 @@
-/* mobile media query */
+/* --- mobile media query --- */
+:root{
+    --primary: #304F22;
+    --secondary: #C9C250;
+    --tertiary: #151D09;
+    --emphasis: #FFBE4D;
+}
+
 h1, h2, h3{
     font-family: Alegreya, serif;
+    color: var(--tertiary);
 }
 
 a, p{
     font-family: Inter, sans-serif;
+    color: var(--tertiary);
+}
+
+.user-menu, .hamburger-menu{
+    transition: .3s ease;
 }
 
 header{
@@ -13,14 +26,31 @@ header{
     background-position: center;
 }
 
-:root{
-    --primary: #304F22;
-    --secondary: #C9C250;
-    --emphasis: #FFBE4D;
+.breakfast{
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/vegetarian-breakfast.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lunch{
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/vegetarian-lunch.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dinner{
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/vegetarian-dinner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .fa-leaf{
     font-size: 5rem;
+}
+
+.fa-face-smile, .fa-thumbs-up{
+    /* font-size: 7rem; */
+    color: var(--primary);
 }
 
 .fa-user, .fa-bars{
@@ -51,8 +81,78 @@ iframe{
     height: 25rem;
 }
 
+/* #navbarTogglerDemo01{
+    transition: left 1s ease-in-out;
+} */
 
-/* tablet media query */
+#menu-items h3{
+    color: var(--emphasis);
+}
+
+/* button #1 */
+.card a{
+    background-color: var(--emphasis);
+    color: var(--primary);
+    transition: background-color .5s ease, transform .5s ease;
+}
+
+.card a:hover{
+    background-color: var(--primary);
+    color: var(--emphasis);
+    transform: scale(1.05);
+}
+
+.card a:focus{
+    outline: 2px solid var(--emphasis);
+}
+
+/* button #2 */
+.footer-btn a, .header-text a{
+    color: var(--tertiary);
+    background-color: white;
+    transition: background-color .5s ease, transform .5s ease;
+}
+
+.footer-btn a:hover, .header-text a:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+.footer-btn a:focus, .header-text a:focus{
+    outline: 2px solid var(--secondary);
+}
+
+/* button #3 */
+#new-items a, #reservation a{
+    background-color: var(--tertiary);
+    color: white;
+    transition: background-color .5s ease, transform .5s ease;
+}
+
+#new-items a:hover, #reservation a:hover{
+    color: var(--tertiary);
+    background-color: white;
+    transform: scale(1.05);
+}
+
+#new-items a:focus, #reservation a:focus{
+    outline: 2px solid var(--tertiary);
+}
+
+/* nav button */
+.nav-item a:hover{
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+.nav-item a:focus{
+    font-weight: bold;
+    outline: 2px solid white;
+}
+
+
+/* --- tablet media query --- */
 @media screen and (min-width: 720px){
     .wrapper{
         width: 720px;
@@ -68,6 +168,7 @@ iframe{
     }
 }
 
+/* --- desktop media query --- */
 @media screen and (min-width: 1440px){
     .wrapper{
         width: 1200px;
