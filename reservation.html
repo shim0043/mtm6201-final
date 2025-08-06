@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/21478e2192.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body itemscope itemtype="https://schema.org/Restaurant">    
     <a href="#main-content" class="skip-link position-fixed text-white z-n1">Skip to Main Content</a>
@@ -22,25 +28,25 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
-                        <li>
+                        <li class="nav-item">
                             <h3 class="me-auto mb-2 mb-lg-0">Main Menu</h3>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link disabled text-black" href="">► Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled text-black" href=""> ► Events</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link text-black" aria-current="page" href="about.html">► About Us</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link text-black" aria-current="page" href="reservation.html">► Reservation</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link disabled text-black" href="">► Contact</a>
                         </li>
                     </ul>
@@ -96,28 +102,134 @@
     </header>
 
 
-    <main class="text-center my-5">
-        <section>
-            <div>
-                <img src="images/one-person.jpg" alt="woman smiling at a tablet surrounded by vegetable dishes">
-            </div>
-            <div>
-                <h2>Reservation</h2>
-                <form></form>
-                <a class="btn btn-lg" href="" role="button">Book Now</a>
+    <main class="my-5">
+        <section id="reservation" class="my-5">
+            <div class="wrapper">
+                <div class="row container-fluid">
+                    <div class="col-lg">
+                        <div class="mb-3 text-center">
+                            <picture>
+                                <source srcset="" 
+                                media="(min-width: 1440px)">
+
+                                <source srcset="" 
+                                media="(min-width: 720px)">
+
+                                <source srcset="" 
+                                media="(min-width: 320px)">
+
+                                <img src="images/one-person.jpg" alt="Woman smiling at a tablet surrounded by vegetable dishes">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="col-lg">
+                        <h2 class="display-2 text-center">Reservation</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm mb-3">
+                                    <label for="date">Date*</label><br>
+                                    <input id="date" name="date" type="text" class="input container-fluid">
+                                </div>
+                                <div class="col-sm mb-3">
+                                    <label for="time">Time*</label><br>
+                                    <input id="time" name="time" type="text" class="input container-fluid">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="guest">Guest*</label><br>
+                                <input id="guest" name="guest" type="text" class="input container-fluid">
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="mb-3 col-sm">
+                                    <label for="firstname">First Name</label><br>
+                                    <input id="firstname" name="firstname" type="text" class="input container-fluid">
+                                </div>
+                                <div class="mb-3 col-sm">
+                                    <label for="lastname">Last Name</label><br>
+                                    <input id="lastname" name="lastname" type="text" class="input container-fluid">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-sm">
+                                    <label for="email">Email</label><br>
+                                    <input id="email" name="email" type="email" class="input container-fluid">
+                                </div>
+                                <div class="mb-3 col-sm">
+                                    <label for="phone">Phone</label><br>
+                                    <input id="phone" name="phone" type="number" class="input container-fluid">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message">Comment</label><br>
+                                <textarea id="message" class="input container-fluid"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <a class="btn btn-lg bg-black text-white" href="" role="button">Book Now</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- placeholder section per rubric requirement -->
-        <section>
-            <h2></h2>
-            <div class="wrapper"></div>
+        <section id="location" class="my-5">
+            <div class="wrapper">
+                <h2 class="display-2 text-center">Location</h2>
+                <iframe class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.801588259077!2d-75.76408714056014!3d45.34981355709794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1754442497268!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <!-- placeholder section per rubric requirement (2) -->
-        <section>
-            <h2></h2>
-            <div class="wrapper"></div>
+        <section id="hours-of-operation" class="my-5">
+            <div class="wrapper text-center">
+                <h2 class="display-2">Hours of Operation</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="fw-bold">Day</th>
+                            <th class="fw-bold">Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="container-fluid">
+                        <tr>
+                            <td>Monday</td>
+                            <td>11am-8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11am-8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>11am-8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>11am-8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11am-8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10am-9pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10am-9pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
