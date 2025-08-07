@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,50 +19,50 @@
     <a href="#main-content" class="skip-link position-fixed text-white z-n1">Skip to Main Content</a>
 
     <header>
-        <nav>
+        <nav aria-label="Main mobile navigation">
             <div class="d-flex justify-content-between pt-2">
                 <div class="p-4 pt-5" id="navbarTogglerDemo01">
-                    <a class="navbar-toggler text-white" href="" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation" role="button">
-                        <span class="text-white">
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
+                    <button class="text-white hamburger-btn btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle main menu">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu hamburger-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01" role="menu">
                         <li>
-                            <h3 class="me-auto mb-2 mb-lg-0">Main Menu</h3>
+                            <h3 class="me-auto mb-2 mb-lg-0 text-decoration-underline">Main Menu</h3>
                         </li>
                         <li>
-                            <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
+                            <a class="nav-link active text-black" aria-current="page" href="index.html" role="menuitem">► Home</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href="">► Menu</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Menu</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href=""> ► Events</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Events</a>
                         </li>
                         <li>
-                            <a class="nav-link text-black" aria-current="page" href="about.html">► About Us</a>
+                            <a class="nav-link text-black" aria-current="page" href="about.html" role="menuitem">► About Us</a>
                         </li>
                         <li>
-                            <a class="nav-link text-black" aria-current="page" href="reservation.html">► Reservation</a>
+                            <a class="nav-link text-black" aria-current="page" href="reservation.html" role="menuitem">► Reservation</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href="">► Contact</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="p-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white btn" href="index.html" role="button" itemprop="url">
+                        <i class="fa-solid fa-leaf" itemprop="logo" aria-hidden="true"></i>
+                    </a>
                 </div>
                 
                 <div class="p-4 pt-5">
-                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                    <button class="text-white user-btn btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User account menu">
                         <i class="fa-solid fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
+                    </button>
+                    <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item text-black" href="">► Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,30 +71,30 @@
         <div class="wrapper full-nav">
             <ul class="nav nav-fill py-2">
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Menu</a>
+                    <a class="nav-link text-white" href="">Menu</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Events</a>
+                    <a class="nav-link text-white" href="">Events</a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item py-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white" href="index.html" itemprop="url"><i class="fa-solid fa-leaf" itemprop="logo" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="reservation.html">Reservations</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Contacts</a>
+                    <a class="nav-link text-white" href="">Contacts</a>
                 </li>
-                <li class="nav-item pt-5">
-                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item pt-4">
+                    <button class="text-white user-btn btn" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User account menu">
                         <i class="fa-solid fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
+                    </button>
+                    <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item text-black" href="">► Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -102,121 +102,121 @@
     </header>
 
 
-    <main class="my-5 m-3">
-        <section id="about-us">
+    <main class="my-5">
+        <section id="about-us" aria-labelledby="about-us-heading">
             <div class="wrapper">
-                <h2 class="mb-4 display-3">About Us</h2>
+                <h2 class="mb-4 display-3 mx-3" id="about-us-heading">About Us</h2>
 
-                <div class="row mb-5">
-                    <div class="col-md text-center">
+                <div class="row mb-5 mx-3">
+                    <div class="col-md-6 text-center">
                         <picture>
-                            <source srcset="" 
+                            <source srcset="images/two-people-480.jpg" 
                             media="(min-width: 1440px)">
 
-                            <source srcset="" 
+                            <source srcset="images/two-people-320.jpg" 
                             media="(min-width: 720px)">
 
-                            <source srcset="" 
+                            <source srcset="images/two-people-320.jpg" 
                             media="(min-width: 320px)">
 
-                            <img src="images/two-people.jpg" alt="Two women talking around the table">
+                            <img src="images/two-people.jpg" alt="Two women talking around the table" itemprop="image">
                         </picture>
                     </div>
-                    <div class="col-md align-self-top text-center text-md-start">
+                    <div class="col-md-6 align-self-top text-center text-md-start">
                         <h3 class="display-5">Mission</h3>
                         <p class="fw-light">Our mission is to celebrate the art of plant-based dining by creating elegant, seasonal dishes that honor nature's bounty, support local growers, and nourish both body and soul.</p>
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <div class="col-md order-md-2 text-center">
+                <div class="row mb-5 mx-3">
+                    <div class="col-md-6 order-md-2 text-center">
                         <picture>
-                            <source srcset="" 
+                            <source srcset="images/cooking-pan-480.jpg" 
                             media="(min-width: 1440px)">
 
-                            <source srcset="" 
+                            <source srcset="images/cooking-pan-320.jpg" 
                             media="(min-width: 720px)">
 
-                            <source srcset="" 
+                            <source srcset="images/cooking-pan-320.jpg" 
                             media="(min-width: 320px)">
 
-                            <img src="images/cooking-pan.jpg" alt="Vegetables being cooked on pan">
+                            <img src="images/cooking-pan.jpg" alt="Vegetables being cooked on pan" itemprop="image">
                         </picture>
                     </div>
 
-                    <div class="col-md align-self-top text-center text-md-end">
+                    <div class="col-md-6 align-self-top text-center text-md-end">
                         <h3 class="display-5">Our Story</h3>
-                        <p class="fw-light">Rooted in a love for seasonal ingredients and sustainable living, we craft elegant vegetarian dishes that celebrate nature, local farms, and the art of mindful dining.</p>
+                        <p class="fw-light" itemprop="description">Rooted in a love for seasonal ingredients and sustainable living, we craft elegant vegetarian dishes that celebrate nature, local farms, and the art of mindful dining.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- placeholder section per rubric requirement -->
-        <section>
-            <div class="wrapper mb-5">
-                <h2 class="display-3">Our CEO</h2>
-                <div class="row">
-                    <div class="col-md text-center my-4">
+        <section id="ceo" aria-labelledby="ceo-heading">
+            <div class="wrapper">
+                <h2 class="display-3 mx-3" id="ceo-heading">Our CEO</h2>
+                <div class="row text-center pb-4 mb-5 mx-3" itemscope itemtype="https://schema.org/Person" itemprop="founder">
+                    <div class="col-md my-3">
                         <picture>
-                            <source srcset="" 
+                            <source srcset="images/helena-320.jpg" 
                             media="(min-width: 1440px)">
 
-                            <source srcset="" 
+                            <source srcset="images/helena-240.jpg" 
                             media="(min-width: 720px)">
 
-                            <source srcset="" 
+                            <source srcset="images/helena-320.jpg" 
                             media="(min-width: 320px)">
 
-                            <img src="images/helena.jpg" alt="Portrait of Helena" class="rounded-circle">
+                            <img src="images/helena.jpg" alt="Portrait of Helena" class="rounded-circle" itemprop="image">
                         </picture>
                     </div>
 
                     <div class="col-md align-self-center text-center text-md-start">
-                        <h3 class="display-5">Helena</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3 class="display-5" itemprop="name">Helena</h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- placeholder section per rubric requirement (2) -->
-        <section>
-            <div class="wrapper mb-5">
-                <h2 class="display-3">Meet the Team</h2>
-                <div class="row">
-                    <div class="col-md-6 text-center my-4">
+        <section id="team" aria-labelledby="team-heading">
+            <div class="wrapper">
+                <h2 class="display-3 mx-3" id="team-heading">Meet the Team</h2>
+                <div class="row mx-3">
+                    <div class="col-md-6 text-center my-4" itemscope itemtype="https://schema.org/Person" itemprop="employee">
                         <picture>
-                            <source srcset="" 
+                            <source srcset="images/johnny-320.jpg" 
                             media="(min-width: 1440px)">
 
-                            <source srcset="" 
+                            <source srcset="images/johnny-240.jpg" 
                             media="(min-width: 720px)">
 
-                            <source srcset="" 
+                            <source srcset="images/johnny-320.jpg" 
                             media="(min-width: 320px)">
 
-                            <img src="images/johnny.jpg" alt="Portrait of Johnny" class="rounded-circle">
+                            <img src="images/johnny.jpg" alt="Portrait of Johnny" class="rounded-circle" itemprop="image">
                         </picture>
-                        <h3 class="display-5">Johnny</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3 class="display-5" itemprop="name">Johnny</h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
 
-                    <div class="col-md-6 text-center my-4">
+                    <div class="col-md-6 text-center my-4" itemscope itemtype="https://schema.org/Person" itemprop="employee">
                         <picture>
-                            <source srcset="" 
+                            <source srcset="images/stephanie-320.jpg" 
                             media="(min-width: 1440px)">
 
-                            <source srcset="" 
+                            <source srcset="images/stephanie-240.jpg" 
                             media="(min-width: 720px)">
 
-                            <source srcset="" 
+                            <source srcset="images/stephanie-320.jpg" 
                             media="(min-width: 320px)">
 
-                            <img src="images/stephanie.jpg" alt="Portrait of Stephanie" class="rounded-circle">
+                            <img src="images/stephanie.jpg" alt="Portrait of Stephanie" class="rounded-circle" itemprop="image">
                         </picture>
-                        <h3 class="display-5">Stephanie</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3 class="display-5" itemprop="name">Stephanie</h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -224,17 +224,23 @@
     </main>
 
     
-    <footer class="text-center">
+   <footer class="text-center">
         <div class="wrapper">
-            <a href="index.html">
-                <i class="fa-solid fa-leaf mt-4"></i>
+            <a href="index.html" role="button">
+                <i class="fa-solid fa-leaf mt-4" aria-hidden="true"></i>
             </a>
-            <p class="my-5 fw-light">Seasonal | Vegetarian | Locally Sourced<br>123 Green St., ON, Canada<br>000-000-000<br>greenstreet@gmail.com</p>
+            <p class="my-5 fw-light">
+                <span itemprop="servesCuisine">Seasonal | Vegetarian | Locally Sourced</span><br>
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"></span>
+                <span itemprop="streetAddress">123 Green St.</span>, <span itemprop="addressRegion">ON</span>, <span itemprop="addressCountry">Canada</span><br>
+                <span itemprop="telephone">000-000-000</span><br>
+                <span itemprop="email">greenstreet@gmail.com</span>
+            </p>
             <div class="footer-btn row justify-content-center gap-4">
                 <a class="btn btn-lg col-6 col-md-3" href="reservation.html" role="button">Reserve Now</a>
                 <a class="btn btn-lg col-6 col-md-3" href="#menu-items" role="button">Order Now</a>
             </div>
-            <p class="mb-0 mt-5 pb-3 fw-light">© Green Street 2025</p>
+            <p class="mb-0 mt-5 pb-3 fw-light">© <span itemprop="name">Green Street</span> 2025</p>
         </div>
     </footer>
 
