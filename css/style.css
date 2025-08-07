@@ -23,7 +23,7 @@ a, p{
 header{
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/hero.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .breakfast{
@@ -49,7 +49,6 @@ header{
 }
 
 .fa-face-smile, .fa-thumbs-up{
-    /* font-size: 7rem; */
     color: var(--primary);
 }
 
@@ -69,6 +68,10 @@ footer p{
     color: var(--secondary);
 }
 
+#ceo, .green-bg{
+    background-color: var(--secondary);
+}
+
 .full-nav .nav-item{
     display: none;
 }
@@ -81,28 +84,24 @@ iframe{
     height: 25rem;
 }
 
-/* #navbarTogglerDemo01{
-    transition: left 1s ease-in-out;
-} */
-
 #menu-items h3{
     color: var(--emphasis);
 }
 
 /* button #1 */
-.card a{
+.card button{
     background-color: var(--emphasis);
     color: var(--primary);
-    transition: background-color .5s ease, transform .5s ease;
+    transition: background-color .3s ease, transform .3s ease;
 }
 
-.card a:hover{
+.card button:hover{
     background-color: var(--primary);
     color: var(--emphasis);
     transform: scale(1.05);
 }
 
-.card a:focus{
+.card button:focus{
     outline: 2px solid var(--emphasis);
 }
 
@@ -110,7 +109,7 @@ iframe{
 .footer-btn a, .header-text a{
     color: var(--tertiary);
     background-color: white;
-    transition: background-color .5s ease, transform .5s ease;
+    transition: background-color .3s ease, transform .3s ease;
 }
 
 .footer-btn a:hover, .header-text a:hover{
@@ -124,31 +123,31 @@ iframe{
 }
 
 /* button #3 */
-#new-items a, #reservation a{
+#new-items button, #reservation button{
     background-color: var(--tertiary);
     color: white;
-    transition: background-color .5s ease, transform .5s ease;
+    transition: background-color .3s ease, transform .3s ease;
 }
 
-#new-items a:hover, #reservation a:hover{
+#new-items button:hover, #reservation button:hover{
     color: var(--tertiary);
     background-color: white;
     transform: scale(1.05);
 }
 
-#new-items a:focus, #reservation a:focus{
+#new-items button:focus, #reservation button:focus{
     outline: 2px solid var(--tertiary);
 }
 
 /* nav button */
-.nav-item a:hover{
+.nav-item a:hover, .hamburger-btn:hover, .user-btn:hover{
     font-weight: bold;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.nav-item a:focus{
+.nav-item a:focus, .hamburger-btn:focus, .user-btn:focus{
     font-weight: bold;
-    outline: 2px solid white;
+    outline: 1px solid white;
 }
 
 
