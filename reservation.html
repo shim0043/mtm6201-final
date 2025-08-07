@@ -19,50 +19,50 @@
     <a href="#main-content" class="skip-link position-fixed text-white z-n1">Skip to Main Content</a>
 
     <header>
-        <nav>
+        <nav aria-label="Main mobile navigation">
             <div class="d-flex justify-content-between pt-2">
                 <div class="p-4 pt-5" id="navbarTogglerDemo01">
-                    <a class="navbar-toggler text-white" href="" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation" role="button">
-                        <span class="text-white">
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01">
+                    <button class="text-white hamburger-btn btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle main menu">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu hamburger-menu me-auto mb-2 mb-lg-0 px-5 py-4" aria-labelledby="navbarTogglerDemo01" role="menu">
                         <li>
-                            <h3 class="me-auto mb-2 mb-lg-0">Main Menu</h3>
+                            <h3 class="me-auto mb-2 mb-lg-0 text-decoration-underline">Main Menu</h3>
                         </li>
                         <li>
-                            <a class="nav-link active text-black" aria-current="page" href="index.html">► Home</a>
+                            <a class="nav-link active text-black" aria-current="page" href="index.html" role="menuitem">► Home</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href="">► Menu</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Menu</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href=""> ► Events</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Events</a>
                         </li>
                         <li>
-                            <a class="nav-link text-black" aria-current="page" href="about.html">► About Us</a>
+                            <a class="nav-link text-black" aria-current="page" href="about.html" role="menuitem">► About Us</a>
                         </li>
                         <li>
-                            <a class="nav-link text-black" aria-current="page" href="reservation.html">► Reservation</a>
+                            <a class="nav-link text-black" aria-current="page" href="reservation.html" role="menuitem">► Reservation</a>
                         </li>
                         <li>
-                            <a class="nav-link disabled text-black" href="">► Contact</a>
+                            <a class="nav-link text-black" href="" role="menuitem">► Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="p-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white btn" href="index.html" role="button" itemprop="url">
+                        <i class="fa-solid fa-leaf" itemprop="logo" aria-hidden="true"></i>
+                    </a>
                 </div>
                 
                 <div class="p-4 pt-5">
-                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                    <button class="text-white user-btn btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User account menu">
                         <i class="fa-solid fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
+                    </button>
+                    <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item text-black" href="">► Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,30 +71,30 @@
         <div class="wrapper full-nav">
             <ul class="nav nav-fill py-2">
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Menu</a>
+                    <a class="nav-link text-white" href="">Menu</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Events</a>
+                    <a class="nav-link text-white" href="">Events</a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item py-3">
-                    <a class="navbar-brand text-white active" href="index.html"><i class="fa-solid fa-leaf" itemprop="logo"></i></a>
+                    <a class="navbar-brand text-white" href="index.html" itemprop="url"><i class="fa-solid fa-leaf" itemprop="logo" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item pt-5">
                     <a class="nav-link text-white" href="reservation.html">Reservations</a>
                 </li>
                 <li class="nav-item pt-5">
-                    <a class="nav-link disabled text-white" href="">Contacts</a>
+                    <a class="nav-link text-white" href="">Contacts</a>
                 </li>
-                <li class="nav-item pt-5">
-                    <a class="navbar-brand text-white" href="" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item pt-4">
+                    <button class="text-white user-btn btn" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User account menu">
                         <i class="fa-solid fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item disabled text-black" href="">► Log In</a></li>
-                        <li><a class="dropdown-item disabled text-black" href="">► Sign Up</a></li>
+                    </button>
+                    <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item text-black" href="">► Log In</a></li>
+                        <li><a class="dropdown-item text-black" href="">► Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -103,35 +103,35 @@
 
 
     <main class="my-5 m-3">
-        <section id="reservation">
+        <section id="reservation" aria-labelledby="reservation-heading">
             <div class="wrapper">
                 <div class="row container-fluid">
-                    <div class="col-lg">
+                    <div class="col-md">
                         <div class="mb-3 text-center">
                             <picture>
-                                <source srcset="" 
+                                <source srcset="images/one-person-720.jpg" 
                                 media="(min-width: 1440px)">
 
-                                <source srcset="" 
+                                <source srcset="images/one-person-480.jpg" 
                                 media="(min-width: 720px)">
 
-                                <source srcset="" 
+                                <source srcset="images/one-person-320.jpg" 
                                 media="(min-width: 320px)">
 
-                                <img src="images/one-person.jpg" alt="Woman smiling at a tablet surrounded by vegetable dishes">
+                                <img src="images/one-person.jpg" alt="Woman smiling at a tablet surrounded by vegetable dishes" itemprop="image">
                             </picture>
                         </div>
                     </div>
 
-                    <div class="col-lg">
-                        <h2 class="display-3 text-center">Reservation</h2>
-                        <form>
+                    <div class="col-md">
+                        <h2 class="display-3 text-center" id="reservation-heading">Reservation</h2>
+                        <form class="container-fluid">
                             <div class="row">
-                                <div class="col-sm mb-3">
+                                <div class="col-md mb-3">
                                     <label for="date" class="fw-light">Date*</label><br>
                                     <input id="date" name="date" type="text" class="input container-fluid">
                                 </div>
-                                <div class="col-sm mb-3">
+                                <div class="col-md mb-3">
                                     <label for="time" class="fw-light">Time*</label><br>
                                     <input id="time" name="time" type="text" class="input container-fluid">
                                 </div>
@@ -143,22 +143,22 @@
                             </div>
 
                             <div class="row mt-5">
-                                <div class="mb-3 col-sm">
+                                <div class="mb-3 col-md">
                                     <label for="firstname" class="fw-light">First Name</label><br>
                                     <input id="firstname" name="firstname" type="text" class="input container-fluid">
                                 </div>
-                                <div class="mb-3 col-sm">
+                                <div class="mb-3 col-md">
                                     <label for="lastname" class="fw-light">Last Name</label><br>
                                     <input id="lastname" name="lastname" type="text" class="input container-fluid">
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="mb-3 col-sm">
+                                <div class="mb-3 col-md">
                                     <label for="email" class="fw-light">Email</label><br>
                                     <input id="email" name="email" type="email" class="input container-fluid">
                                 </div>
-                                <div class="mb-3 col-sm">
+                                <div class="mb-3 col-md">
                                     <label for="phone" class="fw-light">Phone</label><br>
                                     <input id="phone" name="phone" type="number" class="input container-fluid">
                                 </div>
@@ -170,7 +170,7 @@
                             </div>
 
                             <div class="text-center">
-                                <a class="btn btn-lg px-5" href="" role="button">Book Now</a>
+                                <button class="btn btn-lg px-5">Book Now</button>
                             </div>
                         </form>
                     </div>
@@ -179,18 +179,18 @@
         </section>
 
         <!-- placeholder section per rubric requirement -->
-        <section id="location" class="my-5">
+        <section id="location" class="my-5" aria-labelledby="location-heading">
             <div class="wrapper">
-                <h2 class="display-3 text-center">Location</h2>
-                <iframe class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.801588259077!2d-75.76408714056014!3d45.34981355709794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1754442497268!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2 class="display-3 text-center" id="location-heading">Location</h2>
+                <iframe class="container-fluid" itemprop="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.801588259077!2d-75.76408714056014!3d45.34981355709794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1754442497268!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
         <!-- placeholder section per rubric requirement (2) -->
-        <section id="hours-of-operation" class="my-5">
+        <section id="hours-of-operation" class="my-5" aria-labelledby="hours-of-operation-heading">
             <div class="wrapper text-center">
-                <h2 class="display-3">Hours of Operation</h2>
-                <table class="table">
+                <h2 class="display-3" id="hours-of-operation-heading">Hours of Operation</h2>
+                <table class="table" itemprop="hours-of-operation">
                     <thead>
                         <tr>
                             <th class="fw-bold">Day</th>
@@ -236,15 +236,21 @@
     
     <footer class="text-center">
         <div class="wrapper">
-            <a href="index.html">
-                <i class="fa-solid fa-leaf mt-4"></i>
+            <a href="index.html" role="button">
+                <i class="fa-solid fa-leaf mt-4" aria-hidden="true"></i>
             </a>
-            <p class="my-5 fw-light">Seasonal | Vegetarian | Locally Sourced<br>123 Green St., ON, Canada<br>000-000-000<br>greenstreet@gmail.com</p>
+            <p class="my-5 fw-light">
+                <span itemprop="servesCuisine">Seasonal | Vegetarian | Locally Sourced</span><br>
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"></span>
+                <span itemprop="streetAddress">123 Green St.</span>, <span itemprop="addressRegion">ON</span>, <span itemprop="addressCountry">Canada</span><br>
+                <span itemprop="telephone">000-000-000</span><br>
+                <span itemprop="email">greenstreet@gmail.com</span>
+            </p>
             <div class="footer-btn row justify-content-center gap-4">
                 <a class="btn btn-lg col-6 col-md-3" href="reservation.html" role="button">Reserve Now</a>
                 <a class="btn btn-lg col-6 col-md-3" href="#menu-items" role="button">Order Now</a>
             </div>
-            <p class="mb-0 mt-5 pb-3 fw-light">© Green Street 2025</p>
+            <p class="mb-0 mt-5 pb-3 fw-light">© <span itemprop="name">Green Street</span> 2025</p>
         </div>
     </footer>
 
